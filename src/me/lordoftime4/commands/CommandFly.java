@@ -7,8 +7,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import me.sisko.fly.Main;
-import me.sisko.fly.PlayerSaver;
+import me.lordoftime4.fly.Main;
+import me.lordoftime4.fly.PlayerSaver;
 import net.md_5.bungee.api.ChatColor;
 
 public class CommandFly implements CommandExecutor {

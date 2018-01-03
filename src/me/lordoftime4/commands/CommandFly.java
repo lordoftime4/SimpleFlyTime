@@ -1,4 +1,4 @@
-package me.sisko.commands;
+package me.lordoftime4.commands;
 
 import org.bukkit.Location;
 import org.bukkit.Material;

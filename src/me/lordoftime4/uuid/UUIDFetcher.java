@@ -10,20 +10,15 @@ import java.nio.charset.Charset;
  * Helper-class for getting UUIDs of players
  */
 public class UUIDFetcher {
-
 	/**
 	 * @param playername The name of the player
 	 * @return The UUID of the given player
 	 */
 	public static String getUUID(String playername) {
 		String output = callURL("https://api.mojang.com/users/profiles/minecraft/" + playername);
-
 		StringBuilder result = new StringBuilder();
-
 		readData(output, result);
-
 		String u = result.toString();
-
 		String uuid = "";
 		try {
 			for(int i = 0; i <= 31; i++) {
@@ -43,13 +38,10 @@ public class UUIDFetcher {
 		try {
 			while(i < 200) {
 				if(!String.valueOf(toRead.charAt(i)).equalsIgnoreCase("\"")) {
-
 					result.append(String.valueOf(toRead.charAt(i)));
-
 				} else {
 					break;
 				}
-
 				i++;
 			}
 		} catch (StringIndexOutOfBoundsException e) {}
@@ -62,29 +54,22 @@ public class UUIDFetcher {
 		try {
 			URL url = new URL(URL);
 			urlConn = url.openConnection();
-
 			if (urlConn != null) urlConn.setReadTimeout(60 * 1000);
-
 			if (urlConn != null && urlConn.getInputStream() != null) {
 				in = new InputStreamReader(urlConn.getInputStream(), Charset.defaultCharset());
 				BufferedReader bufferedReader = new BufferedReader(in);
-
 				if (bufferedReader != null) {
 					int cp;
-
 					while ((cp = bufferedReader.read()) != -1) {
 						sb.append((char) cp);
 					}
-
 					bufferedReader.close();
 				}
 			}
-
 			in.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 
-
 		return sb.toString();
 	}
 }

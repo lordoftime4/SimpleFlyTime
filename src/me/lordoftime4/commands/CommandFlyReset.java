@@ -9,8 +9,8 @@ import org.bukkit.entity.Player;
 
 import me.lordoftime4.fly.PlayerSaver;
 import me.lordoftime4.uuid.UUIDFetcher;
-import net.md_5.bungee.api.ChatColor;
 import me.lordoftime4.fly.Main;
+import net.md_5.bungee.api.ChatColor;
 
 public class CommandFlyReset implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

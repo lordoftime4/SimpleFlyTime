@@ -1,4 +1,4 @@
-package me.sisko.uuid;
+package me.lordoftime4.uuid;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -15,7 +15,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.mcstats.Metrics;
 
-import me.sisko.commands.*;
+import me.lordoftime4.commands.*;
 import net.milkbowl.vault.permission.Permission;
 
 public class Main extends JavaPlugin implements Listener {

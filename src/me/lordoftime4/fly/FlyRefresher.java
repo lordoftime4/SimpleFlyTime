@@ -1,4 +1,4 @@
-package me.sisko.fly;
+package me.lordoftime4.fly;
 
 import java.util.Iterator;
 import java.util.ConcurrentModificationException;

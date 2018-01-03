@@ -6,7 +6,7 @@ import java.util.ConcurrentModificationException;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import me.sisko.commands.CommandFly;
+import me.lordoftime4.commands.CommandFly;
 import net.md_5.bungee.api.ChatColor;
 
 public class FlyRefresher extends BukkitRunnable  {

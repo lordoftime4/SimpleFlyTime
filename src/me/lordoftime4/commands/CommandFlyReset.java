@@ -1,4 +1,4 @@
-package me.sisko.commands;
+package me.lordoftime4.commands;
 
 import java.io.File;
 

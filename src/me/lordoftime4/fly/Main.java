@@ -1,4 +1,4 @@
-package me.sisko.fly;
+package me.lordoftime4.fly;
 
 import java.io.File;
 import java.io.IOException;
